@@ -59,7 +59,7 @@
     "build": "./build_releases.sh",
     "release": "./build_releases.sh && npm publish",
     "test": "PARSE_BUILD=node jest",
-    "postinstall": "npm run build"
+    "postinstall": "npm install && npm run build"
   },
   "jest": {
     "automock": true,
